@@ -5,7 +5,9 @@
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n1 = 10;
 let n2 = 15;
-console.log(n2 > n1);
+if (n1 > n2) {
+  console.log("il primo numero è maggiore");
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -61,7 +63,7 @@ if (totalShoppingCart > 50) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 totalShoppingCart = 57;
 let discount = totalShoppingCart - totalShoppingCart / 5;
-if (totalShoppingCart + discount > 50) {
+if (discount > 50) {
   console.log(discount);
 } else {
   console.log(discount + 10);
@@ -131,27 +133,42 @@ const me = {
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop;
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const array = [];
+array.push(1);
+array.push(2);
+array.push(3);
+array.push(4);
+array.push(5);
+array.push(6);
+array.push(7);
+array.push(8);
+array.push(9);
+array.push(10);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+array[9] = 100;
